@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import { Inter } from 'next/font/google'
+import Head from "next/head";
+import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -12,8 +12,20 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main className="flex flex-col justify-around flex-1">
+        <div className="flex flex-col justify-center gap-10 items-center">
+          <h1 className="text-4xl w-[280px] text-white font-bold leading-[164.5%]">
+            Hi i’m <br></br> hamidreza <br></br>I’m a
+            <span className="text-secondary"> Front Dev</span>
+          </h1>
+          <div className="w-[280px]">
+            <button className="text-2xl text-white font-bold bg-secondary px-[45px] py-[8px] rounded-[2px]">
+              Projects
+            </button>
+          </div>
+        </div>
+        <img src="./bro.svg" alt="bro" />
       </main>
     </>
-  )
+  );
 }
