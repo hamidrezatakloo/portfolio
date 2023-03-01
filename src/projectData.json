@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Read and Write inSuper Blog ",
+    "desc": "create account, write posts,read others,change profile",
+    "live": "https://hamidrezatakloo.github.io/super_blog/",
+    "github": "https://github.com/hamidrezatakloo/super_blog",
+    "techs": ["react", "redux", "tailwind", "django"]
+  },
+  {
+    "name": "Buy figure from Shopping Cart",
+    "desc": "shoppingCart is a simple store that u can add actionFigure from list to cart",
+    "live": "https://hamidrezatakloo.github.io/ShoppingCart/",
+    "github": "https://github.com/hamidrezatakloo/ShoppingCart",
+    "techs": ["react", "tailwind"]
+  },
+  {
+    "name": "Cv Creator",
+    "desc": "build your cv in minutes",
+    "live": "https://hamidrezatakloo.github.io/cv-creator/",
+    "github": "https://github.com/hamidrezatakloo/cv-creator",
+    "techs": ["react", "tailwind"]
+  },
+  {
+    "name": "Crypto App",
+    "desc": "Showing open and close price of BTC,ETH,USDT from api",
+    "live": "https://hamidrezatakloo.github.io/cryptoApp/",
+    "github": "https://github.com/hamidrezatakloo/cryptoApp",
+    "techs": ["html", "sass", "javascript", "webpack"]
+  },
+  {
+    "name": "knight Move",
+    "desc": "find shortest path to goal in 8*8 chess board with BFS",
+    "live": "https://github.com/hamidrezatakloo/knightMove-bfs",
+    "github": "https://github.com/hamidrezatakloo/knightMove-bfs",
+    "techs": ["javascript"]
+  },
+  {
+    "name": "Tic-tac-teo",
+    "desc": "choose your mark and play tic-tac-teo game",
+    "live": "https://hamidrezatakloo.github.io/tic-tac-teo/",
+    "github": "https://github.com/hamidrezatakloo/tic-tac-teo",
+    "techs": ["html", "css", "javascript"]
+  }
+]
