@@ -1,8 +1,8 @@
 const Project = ({ info }) => {
   return (
-    <div className="bg-[#091939] flex flex-col gap-6 items-center p-8 rounded-[2px]">
-      <h2 className="text-2xl font-bold text-white">{info.name}</h2>
-      <p className="text-[#8CAAE4]">{info.desc}</p>
+    <div className="bg-[#091939] flex flex-col gap-6 items-center p-8 rounded-[2px] sm:w-3/12">
+      <h2 className="text-2xl font-bold text-white flex-1">{info.name}</h2>
+      <p className="text-[#8CAAE4] flex-1">{info.desc}</p>
       <div className="flex justify-around gap-4">
         <a
           href={info.live}
