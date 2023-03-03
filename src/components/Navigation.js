@@ -3,10 +3,12 @@ import SideMenu from "./Sidemenu";
 import { Transition } from "react-transition-group";
 import { useRef } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 const duration = 500;
 
 const Navigation = () => {
   const nodeRef = useRef(null);
+  const router = useRouter();
   const [side, setSide] = useState(false);
   const [drop, setDrop] = useState(false);
   return (
@@ -19,9 +21,25 @@ const Navigation = () => {
         {(state) => <SideMenu ref={nodeRef} state={state} setSide={setSide} />}
       </Transition>
       <div className="text-white text-xl sm:flex gap-8 hidden">
-        <Link href={"/"}>Home</Link>
-        <Link href={"/projects"}>Projects</Link>
-        <Link href={"/contact"}>Contact me</Link>
+        <Link href={"/"}>
+          <span className={router.pathname == "/" ? "text-secondary" : ""}>
+            Home
+          </span>
+        </Link>
+        <Link href={"/projects"}>
+          <span
+            className={router.pathname == "/projects" ? "text-secondary" : ""}
+          >
+            Projects
+          </span>
+        </Link>
+        <Link href={"/contact"}>
+          <span
+            className={router.pathname == "/contact" ? "text-secondary" : ""}
+          >
+            Contact me
+          </span>
+        </Link>
       </div>
       <div className="hidden sm:flex gap-8 items-center">
         <div className="h-[37px] w-[81px] bg-secondary rounded-[122px] relative">
