@@ -53,7 +53,7 @@ const Navigation = () => {
             <img src="./arrow down.svg" />
           </button>
           {drop && (
-            <div className="bg-white text-lg text-center font-bold text-secondary absolute w-full top-28 rounded">
+            <div className="bg-white text-lg text-center font-bold text-secondary absolute w-full top-10 rounded">
               <div className="border-b-2 border-secondary p-2">Fa</div>
               <div className=" p-2">En</div>
             </div>
