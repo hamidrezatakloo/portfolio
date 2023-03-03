@@ -1,5 +1,5 @@
 import { forwardRef } from "react";
-
+import Link from "next/link";
 const SideMenu = forwardRef(function SideMenu(props, ref) {
   const transitionStyles = {
     entering: "w-[180px] h-screen",
@@ -24,10 +24,12 @@ const SideMenu = forwardRef(function SideMenu(props, ref) {
           </div>
         </div>
       </div>
-      <ul className="text-2xl font-bold">
-        <li>Home</li>
-        <li>Projects</li>
-        <li>Contact me</li>
+      <ul className="text-2xl font-bold flex flex-col gap-4 items-start">
+        <Link href="/" className="text-secondary">
+          Home
+        </Link>
+        <Link href="/projects">Projects</Link>
+        <Link href="contact">Contact me</Link>
       </ul>
       <div className="flex gap-2 mb-4">
         <span className="text-xl">EN</span>
