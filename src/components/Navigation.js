@@ -4,6 +4,7 @@ import { Transition } from "react-transition-group";
 import { useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import SelectLang from "./SelectLang";
 const duration = 500;
 
 const Navigation = () => {
@@ -47,18 +48,7 @@ const Navigation = () => {
             <img src="./Subtract.svg" className="absolute top-1 left-1.5" />
           </div>
         </div>
-        <div className="flex gap-2 relative text-white">
-          <span className="text-xl">EN</span>
-          <button onClick={() => setDrop(!drop)}>
-            <img src="./arrow down.svg" />
-          </button>
-          {drop && (
-            <div className="bg-white text-lg text-center font-bold text-secondary absolute w-full top-10 rounded">
-              <div className="border-b-2 border-secondary p-2">Fa</div>
-              <div className=" p-2">En</div>
-            </div>
-          )}
-        </div>
+        <SelectLang />
       </div>
     </nav>
   );
