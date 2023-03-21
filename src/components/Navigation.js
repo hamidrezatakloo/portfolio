@@ -15,7 +15,10 @@ const Navigation = () => {
   const [side, setSide] = useState(false);
   const { lang } = useContext(langContext);
   return (
-    <nav className="flex justify-between sm:justify-around">
+    <nav
+      dir={lang == "FA" ? "rtl" : "ltr"}
+      className="flex justify-between sm:px-8 items-center"
+    >
       <img src="./Logo.svg" alt="logo" />
       <button onClick={() => setSide(true)} className="sm:hidden">
         <img src="./Menu.svg" alt="menu" />

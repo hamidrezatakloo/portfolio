@@ -1,9 +1,9 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import { useContext } from "react";
+import { langContext } from "./_app";
 
 export default function Home() {
+  const { lang } = useContext(langContext);
   return (
     <>
       <Head>
@@ -12,7 +12,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex flex-col justify-around sm:justify-start flex-1 sm:items-start sm:p-20">
+      <main
+        dir={lang === "FA" ? "rtl" : "ltr"}
+        className="flex flex-col justify-around sm:justify-start flex-1 sm:items-start sm:p-20"
+      >
         <div className="sm:mt-10 flex flex-col justify-center gap-10 sm:gap-20 items-center">
           <h1 className="text-4xl sm:text-6xl  text-white font-bold leading-[164.5%] sm:leading-normal">
             Hi i’m <br className="sm:hidden"></br> hamidreza <br></br>I’m a
@@ -28,7 +31,9 @@ export default function Home() {
         <img
           src="./bro.svg"
           alt="bro"
-          className="sm:absolute sm:bottom-0 right-20 sm:w-[680px]"
+          className={`sm:absolute sm:bottom-0  sm:w-[680px] ${
+            lang === "EN" ? "right-20" : "left-20"
+          }`}
         />
       </main>
     </>
