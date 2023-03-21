@@ -1,17 +1,19 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import SideMenu from "./Sidemenu";
 import { Transition } from "react-transition-group";
 import { useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import SelectLang from "./SelectLang";
+import { langContext } from "@/pages/_app";
+import langData from "../lang.json";
 const duration = 500;
 
 const Navigation = () => {
   const nodeRef = useRef(null);
   const router = useRouter();
   const [side, setSide] = useState(false);
-  const [drop, setDrop] = useState(false);
+  const { lang } = useContext(langContext);
   return (
     <nav className="flex justify-between sm:justify-around">
       <img src="./Logo.svg" alt="logo" />
@@ -24,21 +26,21 @@ const Navigation = () => {
       <div className="text-white text-xl sm:flex gap-16 hidden">
         <Link href={"/"}>
           <span className={router.pathname == "/" ? "text-secondary" : ""}>
-            Home
+            {langData[lang]["Home"]}
           </span>
         </Link>
         <Link href={"/projects"}>
           <span
             className={router.pathname == "/projects" ? "text-secondary" : ""}
           >
-            Projects
+            {langData[lang]["Projects"]}
           </span>
         </Link>
         <Link href={"/contact"}>
           <span
             className={router.pathname == "/contact" ? "text-secondary" : ""}
           >
-            Contact me
+            {langData[lang]["Contact"]}
           </span>
         </Link>
       </div>
