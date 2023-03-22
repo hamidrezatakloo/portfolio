@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import SelectLang from "./SelectLang";
 import langData from "./../lang.json";
 import { langContext } from "@/pages/_app";
+import SelectTheme from "./SelectTheme";
 const SideMenu = forwardRef(function SideMenu(props, ref) {
   const { lang } = useContext(langContext);
 
@@ -26,11 +27,7 @@ const SideMenu = forwardRef(function SideMenu(props, ref) {
         <button onClick={() => props.setSide(false)}>
           <img src="./close.svg" />
         </button>
-        <div className="h-[37px] w-[81px] bg-secondary rounded-[122px] relative">
-          <div className="w-[26px] h-[26px] rounded-full bg-white absolute right-2 top-1">
-            <img src="./Subtract.svg" className="absolute top-1 left-1.5" />
-          </div>
-        </div>
+        <SelectTheme />
       </div>
       <div className="text-2xl font-bold flex flex-col gap-4 items-start">
         <Link href="/">

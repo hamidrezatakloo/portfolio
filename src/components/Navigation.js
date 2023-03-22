@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 import SelectLang from "./SelectLang";
 import { langContext } from "@/pages/_app";
 import langData from "../lang.json";
+import SelectTheme from "./SelectTheme";
 const duration = 500;
 
 const Navigation = () => {
@@ -48,11 +49,7 @@ const Navigation = () => {
         </Link>
       </div>
       <div className="hidden sm:flex gap-8 items-center">
-        <div className="h-[37px] w-[81px] bg-secondary rounded-[122px] relative">
-          <div className="w-[26px] h-[26px] rounded-full bg-white absolute right-2 top-1">
-            <img src="./Subtract.svg" className="absolute top-1 left-1.5" />
-          </div>
-        </div>
+        <SelectTheme />
         <SelectLang />
       </div>
     </nav>
