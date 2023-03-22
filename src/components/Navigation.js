@@ -5,7 +5,7 @@ import { useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import SelectLang from "./SelectLang";
-import { langContext } from "@/pages/_app";
+import { langContext, themeContext } from "@/pages/_app";
 import langData from "../lang.json";
 import SelectTheme from "./SelectTheme";
 const duration = 500;
@@ -18,7 +18,7 @@ const Navigation = () => {
   return (
     <nav
       dir={lang == "FA" ? "rtl" : "ltr"}
-      className="flex justify-between sm:px-8 items-center"
+      className="flex justify-between sm:px-8 items-center font-bold"
     >
       <img src="./Logo.svg" alt="logo" />
       <button onClick={() => setSide(true)} className="sm:hidden">
@@ -27,7 +27,7 @@ const Navigation = () => {
       <Transition nodeRef={nodeRef} in={side} timeout={duration}>
         {(state) => <SideMenu ref={nodeRef} state={state} setSide={setSide} />}
       </Transition>
-      <div className="text-white text-xl sm:flex gap-16 hidden">
+      <div className="text-white text-xl sm:flex gap-16 hidden text-black dark:text-white">
         <Link href={"/"}>
           <span className={router.pathname == "/" ? "text-secondary" : ""}>
             {langData[lang]["Home"]}

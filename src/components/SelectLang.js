@@ -4,7 +4,7 @@ const SelectLang = () => {
   const [drop, setDrop] = useState(false);
   const { lang, setLang } = useContext(langContext);
   return (
-    <div className="flex gap-2 mb-4 sm:mb-0 relative text-white">
+    <div className="flex gap-2 mb-4 sm:mb-0 relative dark:text-white">
       <span className="text-xl text-center w-8">{lang}</span>
       <button onClick={() => setDrop(!drop)}>
         <img src="./arrow down.svg" />

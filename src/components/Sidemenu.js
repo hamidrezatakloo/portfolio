@@ -19,13 +19,16 @@ const SideMenu = forwardRef(function SideMenu(props, ref) {
   return (
     <div
       ref={ref}
-      className={`transition-all overflow-hidden absolute text-white top-0 bg-[#091939] flex flex-col justify-between items-center ${
+      className={`transition-all overflow-hidden absolute dark:text-white top-0 bg-slate-100 dark:bg-[#091939] flex flex-col justify-between items-center ${
         transitionStyles[props.state]
       } ${lang === "FA" ? "left-0" : "right-0"}`}
     >
       <div className="mt-4 mx-2 self-stretch flex justify-between">
         <button onClick={() => props.setSide(false)}>
-          <img src="./close.svg" />
+          <img
+            src="./close.svg"
+            className="bg-slate-400 dark:bg-transparent rounded"
+          />
         </button>
         <SelectTheme />
       </div>

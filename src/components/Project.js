@@ -4,14 +4,17 @@ import { useContext } from "react";
 const Project = ({ info }) => {
   const { lang } = useContext(langContext);
   return (
-    <div className="bg-[#091939] flex flex-col gap-6 items-center p-8 rounded-[2px] sm:w-5/12 lg:w-3/12">
+    <div className="bg-slate-100 dark:bg-[#091939] flex flex-col gap-6 items-center p-8 rounded-[2px] sm:w-5/12 lg:w-3/12">
       <h2
         dir={lang === "FA" ? "rtl" : "ltr"}
-        className="text-2xl font-bold text-white flex-1"
+        className="text-2xl font-bold dark:text-white flex-1"
       >
         {info.name[lang]}
       </h2>
-      <p dir={lang === "FA" ? "rtl" : "ltr"} className="text-[#8CAAE4] flex-1">
+      <p
+        dir={lang === "FA" ? "rtl" : "ltr"}
+        className="text-slate-600 dark:text-[#8CAAE4] flex-1"
+      >
         {info.desc[lang]}
       </p>
       <div className="flex justify-center items-center gap-4">

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useContext } from "react";
-import { langContext } from "./_app";
+import { langContext, themeContext } from "./_app";
 import intro from "../intro.json";
 export default function Home() {
   const { lang } = useContext(langContext);
@@ -17,7 +17,7 @@ export default function Home() {
         className="flex flex-col justify-around sm:justify-start flex-1 sm:items-start sm:p-20"
       >
         <div className="flex flex-col justify-center gap-10 lg:gap-20 items-center">
-          <h1 className="text-4xl lg:text-6xl p-8 text-white font-bold leading-[164.5%] sm:leading-normal lg:leading-normal">
+          <h1 className="text-4xl lg:text-6xl p-8 dark:text-white font-bold leading-[164.5%] sm:leading-normal lg:leading-normal">
             {intro[lang][0]} <br className="sm:hidden"></br> {intro[lang][1]}
             <br></br>
             {intro[lang][2]}
