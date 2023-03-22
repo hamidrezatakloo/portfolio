@@ -1,42 +1,66 @@
 [
   {
-    "name": "Read and Write inSuper Blog ",
-    "desc": "create account, write posts,read others,change profile",
+    "name": {
+      "EN": "Read and Write in Super Blog",
+      "FA": "در super blog بنویسید و بخوانید"
+    },
+    "desc": {
+      "EN": "create account, write posts,read others,change profile",
+      "FA": "نام نویسی کنید,پست قرار دهید , پست های دیگران را بخوانید,پروفایل تان را تنظیم کنید"
+    },
     "live": "https://hamidrezatakloo.github.io/super_blog/",
     "github": "https://github.com/hamidrezatakloo/super_blog",
     "techs": ["react", "redux", "tailwind", "django"]
   },
   {
-    "name": "Buy figure from Shopping Cart",
-    "desc": "shoppingCart is a simple store that u can add actionFigure from list to cart",
+    "name": {
+      "EN": "Buy figure from Shopping Cart",
+      "FA": "اکشن فیگور سفارش دهید"
+    },
+    "desc": {
+      "EN": "shoppingCart is a simple store that u can add actionFigure from list to cart",
+      "FA": "یک فروشگاه ساده که شما می توانید اکشن فیگور به سبد خرید خود اضافه و کم کنید"
+    },
     "live": "https://hamidrezatakloo.github.io/ShoppingCart/",
     "github": "https://github.com/hamidrezatakloo/ShoppingCart",
     "techs": ["react", "tailwind"]
   },
   {
-    "name": "Cv Creator",
-    "desc": "build your cv in minutes",
+    "name": { "EN": "Cv Creator", "FA": "رزومه ساز" },
+    "desc": {
+      "EN": "build your cv in minutes",
+      "FA": "رزومه خود را در لحظه بسازید"
+    },
     "live": "https://hamidrezatakloo.github.io/cv-creator/",
     "github": "https://github.com/hamidrezatakloo/cv-creator",
     "techs": ["react", "tailwind"]
   },
   {
-    "name": "Crypto App",
-    "desc": "Showing open and close price of BTC,ETH,USDT from api",
+    "name": { "EN": "Crypto App", "FA": "وبسایت کریپتو" },
+    "desc": {
+      "EN": "Showing open and close price of BTC,ETH,USDT from api",
+      "FA": "این وبسایت قیمت باز و بسته ارز های BTC,ETH,USDT را نشان  می دهد"
+    },
     "live": "https://hamidrezatakloo.github.io/cryptoApp/",
     "github": "https://github.com/hamidrezatakloo/cryptoApp",
     "techs": ["html", "sass", "javascript", "webpack"]
   },
   {
-    "name": "knight Move",
-    "desc": "find shortest path to goal in 8*8 chess board with BFS",
+    "name": { "EN": "knight Move", "FA": "حرکت اسب" },
+    "desc": {
+      "EN": "find shortest path to goal in 8*8 chess board with BFS",
+      "FA": "هدف پیدا کردن کوتاه ترین مسیر در یک جدول ۸*۸ به کمک الگوریتم bfs است "
+    },
     "live": "https://github.com/hamidrezatakloo/knightMove-bfs",
     "github": "https://github.com/hamidrezatakloo/knightMove-bfs",
     "techs": ["javascript"]
   },
   {
-    "name": "Tic-tac-teo",
-    "desc": "choose your mark and play tic-tac-teo game",
+    "name": { "EN": "Tic-tac-teo", "FA": "تیک تاک تو" },
+    "desc": {
+      "EN": "choose your mark and play tic-tac-teo game",
+      "FA": "نشانه خود را انتخاب کنید و نیک ناک تو بازی کنید"
+    },
     "live": "https://hamidrezatakloo.github.io/tic-tac-teo/",
     "github": "https://github.com/hamidrezatakloo/tic-tac-teo",
     "techs": ["html", "css", "javascript"]

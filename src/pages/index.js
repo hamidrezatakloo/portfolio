@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useContext } from "react";
 import { langContext } from "./_app";
-
+import intro from "../intro.json";
 export default function Home() {
   const { lang } = useContext(langContext);
   return (
@@ -18,13 +18,20 @@ export default function Home() {
       >
         <div className="sm:mt-10 flex flex-col justify-center gap-10 sm:gap-20 items-center">
           <h1 className="text-4xl sm:text-6xl  text-white font-bold leading-[164.5%] sm:leading-normal">
-            Hi i’m <br className="sm:hidden"></br> hamidreza <br></br>I’m a
-            <span className="text-secondary"> Front Dev</span>
+            {intro[lang][0]} <br className="sm:hidden"></br> {intro[lang][1]}{" "}
+            <br></br>
+            {intro[lang][2]}
+            <span className="text-secondary">&nbsp;{intro[lang][3]}</span>
           </h1>
           <div className="w-[280px]">
             <button className="text-2xl text-white font-bold bg-secondary px-[45px] sm:px-14 sm:py-4 py-[8px] rounded-[2px]">
-              Projects{" "}
-              <img src="./circle right.svg" className="inline-block ml-2 w-6" />
+              {intro["Projects"][lang]}
+              <img
+                src="./circle right.svg"
+                className={`inline-block w-6 ${
+                  lang === "FA" ? "mr-2" : "ml-2"
+                }`}
+              />
             </button>
           </div>
         </div>
