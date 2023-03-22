@@ -42,9 +42,15 @@ const Contact = () => {
       <div className="flex-1  sm:self-stretch sm:justify-between flex flex-col items-center justify-end gap-16">
         <img src="amico.svg" className="sm:w-[428px] sm:my-auto" />
         <div className="flex gap-2 mb-4 sm:self-center bg-secondary px-8 py-2 rounded dark:bg-transparent">
-          <img src="instagram.svg" className="sm:w-10" />
-          <img src="telegram.svg" className="sm:w-10" />
-          <img src="twitter.svg" className="sm:w-10" />
+          <a href="https://www.instagram.com/hamidrezatakalu/">
+            <img src="instagram.svg" className="sm:w-10" />
+          </a>
+          <a href="https://t.me/hamidreza7no">
+            <img src="telegram.svg" className="sm:w-10" />
+          </a>
+          <a href="https://twitter.com/hamidtakloo">
+            <img src="twitter.svg" className="sm:w-10" />
+          </a>{" "}
         </div>
       </div>
     </div>
