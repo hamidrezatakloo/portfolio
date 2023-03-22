@@ -19,7 +19,7 @@ const Project = ({ info }) => {
           href={info.live}
           className="bg-secondary text-white font-bold text-lg py-1.5 px-5 rounded-[2px]"
         >
-          {lang === "FA" ? "مشاهده کردن" : "Open Live"}
+          {lang === "FA" ? "بازدید کردن" : "Open Live"}
         </a>
         <a href={info.github}>
           <img src="./github.svg" />
