@@ -1,29 +1,40 @@
+import { useContext } from "react";
+import contact from "../contact.json";
+import { langContext } from "./_app";
 const Contact = () => {
+  const { lang } = useContext(langContext);
   return (
     <div className="flex-1 flex flex-col sm:flex-row-reverse sm:items-center sm:justify-between sm:gap-16">
       <form className="mt-10 sm:flex-1">
         <div className="max-w-[692px]">
-          <label htmlFor="name" className="text-white text-xl font-bold block">
-            Name
+          <label
+            dir={lang === "FA" ? "rtl" : "ltr"}
+            htmlFor="name"
+            className="text-white text-xl font-bold block"
+          >
+            {contact[lang]["name"]["label"]}
           </label>
           <input
+            dir={lang === "FA" ? "rtl" : "ltr"}
             id="name"
             className="bg-secondary text-[#AFBEDC] p-3 sm:p-6 rounded-[2px] my-2 sm:my-6 w-full"
-            placeholder="Hamidreza takaloo"
+            placeholder={contact[lang]["name"]["placeholder"]}
           />
           <label
+            dir={lang === "FA" ? "rtl" : "ltr"}
             htmlFor="message"
             className="text-white text-xl font-bold block"
           >
-            Your message
+            {contact[lang]["message"]["label"]}
           </label>
           <textarea
+            dir={lang === "FA" ? "rtl" : "ltr"}
             id="message"
             className="bg-secondary text-[#AFBEDC] p-3 sm:p-6 rounded-[2px] my-2 sm:my-6 w-full min-h-[120px] sm:h-[344px]"
-            placeholder="Hi i like your design and i want talk to you about a front project with react"
+            placeholder={contact[lang]["message"]["placeholder"]}
           ></textarea>
           <button className="bg-white text-lg font-bold px-2 py-1.5 rounded-[2px] ml-auto block mt-4">
-            Send Message
+            {contact[lang]["button"]}
             <img src="Send.svg" className="ml-2 inline-block" />
           </button>
         </div>

@@ -1,0 +1,24 @@
+{
+  "EN": {
+    "name": {
+      "label": "Name",
+      "placeholder": "Hamidreza takaloo"
+    },
+    "message": {
+      "label": "Your message",
+      "placeholder": "Hi i like your design and i want talk to you about a front project with react"
+    },
+    "button": "Send Message"
+  },
+  "FA": {
+    "name": {
+      "label": "نام",
+      "placeholder": "حمیدرضا تکلو"
+    },
+    "message": {
+      "label": "پیام شما",
+      "placeholder": "سلام من طراحی شما را دوست دارم میخواهم درباره یک پروژه فرانت با شما صحبت کنم"
+    },
+    "button": "فرستادن پیام"
+  }
+}
