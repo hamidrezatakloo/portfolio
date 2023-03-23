@@ -27,7 +27,7 @@ const Navigation = () => {
       <Transition nodeRef={nodeRef} in={side} timeout={duration}>
         {(state) => <SideMenu ref={nodeRef} state={state} setSide={setSide} />}
       </Transition>
-      <div className="text-white text-xl sm:flex gap-16 hidden text-black dark:text-white">
+      <div className="dark:text-white text-xl sm:flex gap-16 hidden text-black dark:text-white">
         <Link href={"/"}>
           <span className={router.pathname == "/" ? "text-secondary" : ""}>
             {langData[lang]["Home"]}
