@@ -5,7 +5,10 @@ const Contact = () => {
   const { lang } = useContext(langContext);
   return (
     <div className="flex-1 flex flex-col sm:flex-row-reverse sm:items-center sm:justify-between sm:gap-16">
-      <form className="mt-10 sm:flex-1">
+      <form
+        className="mt-10 sm:flex-1"
+        action="mailto:takloohamidreza@gmail.com"
+      >
         <div className="max-w-[692px]">
           <label
             dir={lang === "FA" ? "rtl" : "ltr"}
