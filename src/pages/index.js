@@ -29,7 +29,7 @@ export default function Home() {
             <button className="text-2xl text-white font-bold bg-secondary px-[45px] sm:px-14 sm:py-4 py-[10px] rounded-[2px]">
               {intro["Projects"][lang]}
               <img
-                src="./circle right.svg"
+                src="circle right.svg"
                 className={`inline-block w-6 ${
                   lang === "FA" ? "mr-2" : "ml-2"
                 }`}
@@ -38,7 +38,7 @@ export default function Home() {
           </div>
         </div>
         <img
-          src="./bro.svg"
+          src="bro.svg"
           alt="bro"
           className={`sm:absolute sm:bottom-0 sm:w-[480px] lg:w-[580px] xl:w-[580px] ${
             lang === "EN" ? "right-20" : "left-20"
