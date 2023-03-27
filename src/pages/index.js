@@ -26,7 +26,7 @@ export default function Home() {
               &nbsp;{intro[lang][3]}
             </span>
           </h1>
-          <div className="w-[280px]">
+          <div className="w-[280px] hover:scale-[98%] transition-all">
             <Link
               href={"/projects"}
               className="text-2xl text-white font-bold bg-secondary px-[45px] sm:px-14 sm:py-4 py-[10px] rounded-[2px]"
