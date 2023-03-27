@@ -1,3 +1,2 @@
-my personal portfolio create with nextjs and taiwindcss
-live:
-https://spectacular-kangaroo-665c92.netlify.app/
+my personal portfolio create with nextjs and taiwindcss<br>
+live: https://hamidrezatakloo.github.io/portfolio
