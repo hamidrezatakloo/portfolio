@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useContext } from "react";
 import { langContext, themeContext } from "./_app";
 import intro from "../intro.json";
+import Link from "next/link";
 export default function Home() {
   const { lang } = useContext(langContext);
   return (
@@ -26,7 +27,10 @@ export default function Home() {
             </span>
           </h1>
           <div className="w-[280px]">
-            <button className="text-2xl text-white font-bold bg-secondary px-[45px] sm:px-14 sm:py-4 py-[10px] rounded-[2px]">
+            <Link
+              href={"/projects"}
+              className="text-2xl text-white font-bold bg-secondary px-[45px] sm:px-14 sm:py-4 py-[10px] rounded-[2px]"
+            >
               {intro["Projects"][lang]}
               <img
                 src="circle right.svg"
@@ -34,7 +38,7 @@ export default function Home() {
                   lang === "FA" ? "mr-2" : "ml-2"
                 }`}
               />
-            </button>
+            </Link>
           </div>
         </div>
         <img
