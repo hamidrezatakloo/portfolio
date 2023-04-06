@@ -1,19 +1,6 @@
 [
   {
     "name": {
-      "EN": "Read and Write in Super Blog",
-      "FA": "در super blog بنویسید و بخوانید"
-    },
-    "desc": {
-      "EN": "create account, write posts,read others,change profile",
-      "FA": "نام نویسی کنید,پست قرار دهید , پست های دیگران را بخوانید,پروفایل تان را تنظیم کنید"
-    },
-    "live": "https://hamidrezatakloo.github.io/super_blog/",
-    "github": "https://github.com/hamidrezatakloo/super_blog",
-    "techs": ["react", "redux", "tailwind", "django"]
-  },
-  {
-    "name": {
       "EN": "Buy figure from Shopping Cart",
       "FA": "اکشن فیگور سفارش دهید"
     },
@@ -64,5 +51,18 @@
     "live": "https://hamidrezatakloo.github.io/tic-tac-teo/",
     "github": "https://github.com/hamidrezatakloo/tic-tac-teo",
     "techs": ["html", "css", "javascript"]
+  },
+  {
+    "name": {
+      "EN": "a simple calculator",
+      "FA": "یک ماشین جساب ساده"
+    },
+    "desc": {
+      "EN": "A simple calculator website using HTML and CSS can consist of a basic interface",
+      "FA": "یک وب سایت ماشین حساب ساده با استفاده از HTML و CSS"
+    },
+    "live": "https://hamidrezatakloo.github.io/calculator/",
+    "github": "https://github.com/hamidrezatakloo/calculator",
+    "techs": ["html", "css"]
   }
 ]
